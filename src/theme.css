@@ -1,0 +1,41 @@
+:root {
+    /** Fonts */
+    --heading-font: Lora, Georgia, serif;
+    --body-font: 'DM Sans', Verdana, sans-serif;
+
+    /** Source: https://colorffy.com/dark-theme-generator?colors=5ca4e0-121212 */
+
+    /** Base colors */
+    --clr-dark-a0: #000000;
+    --clr-light-a0: #ffffff;
+
+    /** Theme primary colors */
+    --clr-primary-a0: #5ca4e0;
+    --clr-primary-a10: #72aee4;
+    --clr-primary-a20: #86b8e7;
+    --clr-primary-a30: #99c1eb;
+    --clr-primary-a40: #abcbee;
+    --clr-primary-a50: #bcd6f2;
+
+    /** Theme surface colors */
+    --clr-surface-a0: #121212;
+    --clr-surface-a10: #282828;
+    --clr-surface-a20: #3f3f3f;
+    --clr-surface-a30: #575757;
+    --clr-surface-a40: #717171;
+    --clr-surface-a50: #8b8b8b;
+
+    /** Theme tonal surface colors */
+    --clr-surface-tonal-a0: #1b1f23;
+    --clr-surface-tonal-a10: #303438;
+    --clr-surface-tonal-a20: #464a4d;
+    --clr-surface-tonal-a30: #5e6164;
+    --clr-surface-tonal-a40: #77797c;
+    --clr-surface-tonal-a50: #909395;
+}
+
+/** Examples */
+.example {
+    color: var(--clr-primary-a50);
+    background-color: var(--clr-surface-a0);
+}

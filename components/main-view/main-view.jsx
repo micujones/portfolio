@@ -4,6 +4,7 @@ import { WorkView } from '../work-view/work-view.jsx';
 
 // Bootstrap imports
 import Container from 'react-bootstrap/Container';
+import { ContactView } from '../contact-view/contact-view.jsx';
 
 export const MainView = () => {
     const [currentPage, setCurrentPage] = useState('title');
@@ -51,7 +52,13 @@ export const MainView = () => {
                     Contact
                 </a>
             </div>
-            {currentPage === 'work' ? <WorkView /> : <TitleView />}
+            {currentPage === 'work' ? (
+                <WorkView />
+            ) : currentPage === 'contact' ? (
+                <ContactView />
+            ) : (
+                <TitleView />
+            )}
         </>
     );
 };

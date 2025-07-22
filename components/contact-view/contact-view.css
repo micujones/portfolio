@@ -1,0 +1,39 @@
+@import '/src/theme.css';
+
+label {
+    color: #fff;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    width: 500px;
+}
+
+.form-floating > label {
+    color: var(--clr-primary-a50);
+}
+
+.form-control,
+.form-control:focus {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--clr-primary-a50);
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Not sure why this was being applied */
+.form-floating > textarea:not(:placeholder-shown) ~ label::after {
+    background-color: transparent;
+}

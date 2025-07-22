@@ -30,6 +30,7 @@ a:hover {
 #title-container,
 #page-hero-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -156,6 +157,7 @@ a:hover {
 .btn:hover {
     background-color: var(--clr-surface-a20);
     color: var(--clr-light-a0);
+    border: 1px solid var(--clr-surface-a30);
 }
 
 .icon {
@@ -174,5 +176,5 @@ footer {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 8px;
 }

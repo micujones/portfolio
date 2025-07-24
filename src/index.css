@@ -27,16 +27,6 @@ a:hover {
     color: var(--clr-primary-a50);
 }
 
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    height: 80px;
-    background-color: 'transparent';
-    color: var(--clr-primary-a50);
-}
-
 @media (max-width: 750px) {
     .navbar {
         justify-content: space-around;

@@ -23,6 +23,8 @@ export const WorkCardView = ({ project }) => {
                         className={
                             project.title === 'Most Watched List'
                                 ? 'card-img-horizontal'
+                                : project.title === 'Movie API'
+                                ? 'card-img-horizontal'
                                 : 'card-img-vertical'
                         }
                     />

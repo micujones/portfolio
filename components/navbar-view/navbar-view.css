@@ -1,0 +1,9 @@
+.navbar {
+    opacity: 95%;
+    color: var(--clr-primary-a50);
+}
+
+.navbar-menu {
+    width: 100%;
+    justify-content: center;
+}

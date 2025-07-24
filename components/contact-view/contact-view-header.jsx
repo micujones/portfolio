@@ -6,7 +6,7 @@ import './contact-view.css';
 
 export const ContactViewHeader = () => {
     return (
-        <div id="page-hero-container">
+        <div className="page-hero-container">
             <h2>Let's Connect</h2>
             <div className="social-links">
                 <a href="https://github.com/micujones" target="_blank">

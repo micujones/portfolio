@@ -18,6 +18,12 @@ form {
     width: 500px;
 }
 
+@media (max-width: 750px) {
+    form {
+        width: 90%;
+    }
+}
+
 .form-floating > label {
     color: var(--clr-primary-a50);
 }

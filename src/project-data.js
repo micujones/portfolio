@@ -3,6 +3,7 @@ import mwlThumbnail from '/work-thumbnails/thumbnail-mostwatchedlist.png';
 import chatThumbnail from '/work-thumbnails/thumbnail-chat.png';
 import meetThumbnail from '/work-thumbnails/thumbnail-meet.png';
 import pokedexThumbnail from '/work-thumbnails/thumbnail-pokedex.png';
+import movieApiThumbnail from '/screenshot_movie-api_documentation.png';
 
 let projectObjectTemplate = {
     id: null,
@@ -299,7 +300,7 @@ export const projectData = [
         githubLink: 'https://github.com/micujones/pokedex',
         tools: [nodeJs, pokeApi, jQuery, bootstrap],
         additionalRemarks:
-            'A introductory project for understanding the relationship between HTML, CSS, and JavaScript. I scour PokéAPI for type badges that will be available for each Pokémon (and still look cute). I return to the project later to implement a search function that does not benefit from hooks.',
+            'A introductory project for understanding the relationship between HTML, CSS, and JavaScript. I scour PokéAPI for type badges that will be available for each Pokémon (and still look cute). I return to the project later to implement a search function that does not utilize hooks.',
         gallery: [
             {
                 description: 'Main screen',
@@ -321,11 +322,12 @@ export const projectData = [
         title: 'Movie API',
         description:
             'Server-side for a movies application with access to movie data and ability to manipulate user details.',
-        image: '',
+        image: movieApiThumbnail,
         liveLink: '',
         githubLink: 'https://github.com/micujones/movie_api',
         tools: [nodeJs, express, passport, heroku, mongoDB, mongoose, postman],
-        additionalRemarks: '',
+        additionalRemarks:
+            'This API was built in tandem with a database of movies. It provides user authentication (e.g., JWTs) and endpoint authorization, and offers multiple user actions, including editing profile, adding/removing favorite movies, and deleting the account.',
         gallery: [],
     },
 ];

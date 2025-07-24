@@ -22,17 +22,7 @@ export const MainView = () => {
 
     return (
         <>
-            <div
-                style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    gap: '32px',
-                    height: '80px',
-                    backgroundColor: 'transparent',
-                    color: 'var(--clr-primary-a50)',
-                }}
-            >
+            <div className="navbar">
                 <a
                     onClick={renderTitleView}
                     style={{ margin: 0, cursor: 'pointer' }}

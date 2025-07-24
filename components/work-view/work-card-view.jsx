@@ -3,8 +3,6 @@ import Card from 'react-bootstrap/Card';
 
 import { WorkModal } from './work-modal';
 
-import './work-view.css';
-
 export const WorkCardView = ({ project }) => {
     // Modal
     const [show, setShow] = useState(false);
@@ -13,7 +11,7 @@ export const WorkCardView = ({ project }) => {
 
     return (
         <>
-            <Card style={{ width: '18rem' }} className="scroll-card">
+            <Card className="scroll-card">
                 <div className="card-img-container">
                     <Card.Img
                         variant="top"

@@ -16,7 +16,7 @@ export const NavbarView = () => {
             <Container>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav className="me-auto navbar-menu">
                         <Nav.Link>
                             <NavLink
                                 to="/"
@@ -45,6 +45,16 @@ export const NavbarView = () => {
                                 }
                             >
                                 Contact
+                            </NavLink>
+                        </Nav.Link>
+                        <Nav.Link>
+                            <NavLink
+                                to="about"
+                                className={({ isActive }) =>
+                                    isActive ? 'active' : ''
+                                }
+                            >
+                                About
                             </NavLink>
                         </Nav.Link>
                     </Nav>

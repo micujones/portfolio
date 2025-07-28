@@ -7,3 +7,9 @@
     width: 100%;
     justify-content: center;
 }
+
+@media (min-width: 800px) {
+    .navbar-menu {
+        gap: 16px;
+    }
+}

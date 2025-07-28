@@ -7,6 +7,7 @@ import { TitleView } from '../title-view/title-view.jsx';
 import { WorkView } from '../work-view/work-view.jsx';
 import { ContactView } from '../contact-view/contact-view.jsx';
 import { AboutView } from '../about-view/about-view.jsx';
+import { FooterView } from '../footer-view/footer-view.jsx';
 
 export const MainView = () => {
     return (
@@ -18,6 +19,7 @@ export const MainView = () => {
                 <Route path="contact" element={<ContactView />} />
                 <Route path="about" element={<AboutView />} />
             </Routes>
+            <FooterView />
         </>
     );
 };

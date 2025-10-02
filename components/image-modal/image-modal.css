@@ -1,0 +1,14 @@
+.image-modal {
+    background-color: transparent;
+}
+
+.image-modal-img-container {
+    height: 70vh;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.image-modal-img-container img {
+    max-height: 100%;
+    object-fit: cover;
+}

@@ -2,12 +2,16 @@ import React, { useState } from 'react';
 import Card from 'react-bootstrap/Card';
 
 import { WorkModal } from './work-modal';
+import { ImageModal } from '../image-modal/image-modal';
 
 export const WorkCardView = ({ project }) => {
-    // Modal
+    // Modals
     const [show, setShow] = useState(false);
-    // handleClose function is handled in WorkModal
+    const [showImage, setShowImage] = useState(false);
+
+    // handleClose functions are handled in WorkModal & ImageModal
     const handleShow = () => setShow(true);
+    const handleShowImage = () => setShowImage(true);
 
     return (
         <>
@@ -20,13 +24,15 @@ export const WorkCardView = ({ project }) => {
                                 ? project.image
                                 : 'https://images.icon-icons.com/3261/PNG/512/github_logo_icon_206752.png'
                         }
-                        className={
-                            project.title === 'Most Watched List'
-                                ? 'card-img-horizontal'
-                                : project.title === 'Movie API'
-                                ? 'card-img-horizontal'
-                                : 'card-img-vertical'
-                        }
+                        // className={
+                        //     project.title === 'Most Watched List'
+                        //         ? 'card-img-horizontal'
+                        //         : project.title === 'Movie API'
+                        //         ? 'card-img-horizontal'
+                        //         : 'card-img-vertical'
+                        // }
+                        className="card-img"
+                        onClick={handleShowImage}
                     />
                 </div>
                 <Card.Body>
@@ -43,6 +49,11 @@ export const WorkCardView = ({ project }) => {
                 </Card.Footer>
             </Card>
             <WorkModal project={project} show={show} setShow={setShow} />
+            <ImageModal
+                image={project.image}
+                showImage={showImage}
+                setShowImage={setShowImage}
+            />
         </>
     );
 };

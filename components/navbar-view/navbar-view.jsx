@@ -29,7 +29,7 @@ export const NavbarView = () => {
                         </Nav.Link>
                         <Nav.Link>
                             <NavLink
-                                to="work"
+                                to="/work"
                                 className={({ isActive }) =>
                                     isActive ? 'active' : ''
                                 }
@@ -39,7 +39,7 @@ export const NavbarView = () => {
                         </Nav.Link>
                         <Nav.Link>
                             <NavLink
-                                to="contact"
+                                to="/contact"
                                 className={({ isActive }) =>
                                     isActive ? 'active' : ''
                                 }
@@ -49,7 +49,7 @@ export const NavbarView = () => {
                         </Nav.Link>
                         <Nav.Link>
                             <NavLink
-                                to="about"
+                                to="/about"
                                 className={({ isActive }) =>
                                     isActive ? 'active' : ''
                                 }

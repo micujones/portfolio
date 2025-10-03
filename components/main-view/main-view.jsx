@@ -15,9 +15,9 @@ export const MainView = () => {
             <NavbarView />
             <Routes>
                 <Route index element={<TitleView />} />
-                <Route path="work" element={<WorkView />} />
-                <Route path="contact" element={<ContactView />} />
-                <Route path="about" element={<AboutView />} />
+                <Route path="/work" element={<WorkView />} />
+                <Route path="/contact" element={<ContactView />} />
+                <Route path="/about" element={<AboutView />} />
             </Routes>
             <FooterView />
         </>

@@ -11,7 +11,7 @@ export const galleryImages = [
     { src: baGraduation, caption: 'U of M graduation' },
     { src: dateNight, caption: 'date night' },
     { src: staffKickball, caption: 'staff kickball' },
-    { src: mikeMargarita, caption: 'staff after hours' },
+    // { src: mikeMargarita, caption: 'staff after hours' },
     { src: pajamaDay, caption: 'pajama day' },
     { src: selahReading, caption: 'my toddler reads' },
     { src: studentPracticingPhoto, caption: 'students practicing portraits' },

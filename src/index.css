@@ -73,8 +73,13 @@ a:hover {
 .subtitle {
     font-family: DM Sans;
     font-weight: 300;
-    font-size: 3rem;
+    font-size: 5rem;
     color: var(--clr-primary-a50);
+}
+
+.title-caption {
+    color: #fff;
+    width: 500px;
 }
 
 @media (max-width: 750px) {
@@ -86,10 +91,15 @@ a:hover {
     .home-title {
         font-size: 90px;
         line-height: 85%;
+        margin-bottom: 40px;
     }
 
     .subtitle {
         font-size: 30px;
+    }
+
+    .title-caption {
+        width: 70%;
     }
 }
 
